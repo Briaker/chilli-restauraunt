@@ -2,3 +2,5 @@ dist
 node_modules
 npm-debug.log
 backup
+working-files
+src/css/*.css

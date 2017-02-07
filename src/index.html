@@ -2,27 +2,334 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-		<link type="text/css" rel="stylesheet" href="css/style.css">
-		<title>Hello World!</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Source+Sans+Pro" rel="stylesheet">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="icon" type="image/png" href="img/favicon.png">
+
+
+		<title>Chilli's Restauraunt</title>
 	</head>
 
 	<body>
-		<header>
-			<h1>Hello World!</h1>
-			<a href="page2.html">Page 2</a>
+		<header>	
+			<topnav class="clearfix">
+				<div class="wrapper">
+					<div class="nav-left">
+						<p>Welcome to Chilli Restauraunt</p>
+					</div>
+					<div class="nav-right">
+						<ul class=top-menu>
+							<li>
+								<img src="/img/top-nav/icon-phone.png" alt="Phone Icon">
+								<p>(00) 123 456789</p>
+							</li>
+
+							<li>
+								<img src="/img/top-nav/icon-email.png" alt="Email Icon">
+								<p>info@namecompany.com</p>
+							</li>
+
+							<li>
+								<img src="/img/top-nav/icon-magnifying-glass.png" alt="Magnifying Glass Icon">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</topnav>
 		</header>
 
 		<main>
-			<section>
-				<article>
-					<h1>Article</h1>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultr icies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-				</article>
+			<nav class="clearfix">
+				<div class="wrapper clearfix">
+					<img src="img/chilli-logo.png" alt="Chilli Logo">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/menu.html">Menu</a></li>
+						<li><a href="/events.html"">Events</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<section class="hero-banner">
+				<div class="wrapper">
+					<img src="/img/home-page/since-1987.png" alt="Since 1987">
+					<h1 class="fancy">Welcome to Chilli restaurant</h1>
+
+					<h4 class="stars">
+						Coffee
+						<img src="/img/home-page/white-star.png" alt="White Star" class="star">
+						Bar 
+						<img src="/img/home-page/white-star.png" alt="White Star" class="star">
+						Restaurant
+					</h4>
+
+					<img src="/img/home-page/silver-spring.png" alt="Silver Spring, MD">
+				</div>
+			</section>
+
+			<section class="about">
+				<div class="wrapper clearfix">
+					<div class="about-side vertical-wrapper">
+						<div class="vertical">
+							<h2 class="fancy">About Us</h2>
+							<p>Masters of herbs and spices!</p>
+							<div class="header-underline"></div>
+							<p>Suscipit nisi augue platea et pulvinar conubia pulvinar urna lacinia lectus nostra dictumst, eros ut urna venenatis dui auctor quisque cubilia consequat dictum nec fringilla elementum augue ipsum vulputate nulla quis felis lacus non pretium.</p>
+						</div>
+					</div>
+
+					<div class="about-side">
+						<img src="/img/home-page/about-chilli.jpg" alt="Chilli Logo Over Pasta" class="about-image">
+					</div>
+				</div>
+			</section>
+
+			<section class="specials">
+				<div class="specials-wrapper wrapper clearfix">
+					<h1 class="fancy">Specials</h1>
+
+					<div class="specials-wrapper-inner clearfix">
+						<div class="special">
+							<h4>Appetizer</h4>
+							<ul>
+								<li>
+									<span>Grilled Quail</span>
+									<span>$12</span>
+								</li>
+
+								<li>
+									<span>Stuffed Jalapenos</span>
+									<span>$8</span>
+								</li>
+								
+								<li>
+									<span>Spicy Quesadillas</span>
+									<span>$10</span>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="special">
+							<h4>Main</h4>
+							<ul>
+								<li>
+									<span>Skirt Steak Tacos</span>
+									<span>$22</span>
+								</li>
+
+								<li>
+									<span>Beef Chimichangas</span>
+									<span>$20</span>
+								</li>
+								
+								<li>
+									<span>Smoky Enchiladas</span>
+									<span>$26</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="special">
+							<h4>Dessert</h4>
+							<ul>
+								<li>
+									<span>Bisochitos</span>
+									<span>$8</span>
+								</li>
+
+								<li>
+									<span>Pastel de Tres Leches</span>
+									<span>$14</span>
+								</li>
+
+								<li>
+									<span>Giant Churros</span>
+									<span>$18</span>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+
+					<div class="hollow-button specials-button">
+						<a href="/menu.html"><button><p>Full Menu</p></button></a>
+					</div>
+				</div>
+			</section>
+
+			<section class="reservation">
+				<div class="wrapper">
+					<h2 class="fancy">Make Online Reservation</h2>
+					<div class="header-underline light"></div>
+					<p class="sub-header">Booking a table online is easy and takes just a couple of minutes</p>
+					<!-- add fieldset -->
+					<form action="">
+						<div class="row-wrapper clearfix">
+							<fieldset>
+		  						<div class="label">Name:</div>
+								<input type="text" name="name" id="name">
+							</fieldset>
+
+							<fieldset>
+		  						<div class="label">Time:</div>
+								<input type="text" name="name" id="name">
+							</fieldset>
+
+							<fieldset>
+		  						<div class="label">Date:</div>
+								<input type="text" name="name" id="name">
+							</fieldset>
+						</div>
+
+						<div class="row-wrapper clearfix">
+							<fieldset>
+		  						<div class="label">Email:</div>
+								<input type="text" name="name" id="name">
+							</fieldset>
+
+							<fieldset class="short">
+		  						<div class="label">Phone:</div>
+								<input type="text" name="name" id="name">
+							</fieldset>
+
+							<fieldset class="short">
+	  							<div class="label">Seats:</div>
+								<input type="text" name="name" id="name">
+							</fieldset>
+
+							<input type="submit" value="Book Now">
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<section class="services clearfix">
+				<div class="wrapper">
+					<h2 class="fancy">Our Services</h2>
+					<div class="header-underline"></div>
+					<p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+					
+					<div class="service">
+						<img src="/img/home-page/wedding.png" alt="Wedding Rings">
+						<h4>Wedding Special</h4>
+					</div>
+
+					<div class="service">
+						<img src="/img/home-page/birthday.png" alt="Birthday Cake">
+						<h4>Birthday Special</h4>
+					</div>
+
+					<div class="service">
+						<img src="/img/home-page/office-party.png" alt="Office Workers">
+						<h4>Office Party</h4>
+					</div>
+
+					<div class="service">
+						<img src="/img/home-page/party-hostess.png" alt="People Giving Cheers">
+						<h4>Party Hostess</h4>
+					</div>
+				</div>
 			</section>
 		</main>
+
 		<footer>
-			<h3>Footer</h3>
-			<p>Lorem ipsum Pariatur veniam et laborum do ut sunt Ut est laboris dolor do labore.</p>
+			<section class="welcome">
+				<div class="wrapper">
+					<img src="/img/chilli-logo-white-no-text.png" alt="Chilli Logo">
+					<h3>Welcome To Chilli Restaurant</h3>
+					<p>Primis orci neque luctus dui justo enim tristique curae, laoreet volutpat aenean purus gravida curae orci eleifend blandit, netus fames aliquam posuere cras quisque mi mollis scelerisque cras dictumst adipiscing class leo nisi curabitur at nam ut in.</p>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="wrapper clearfix">
+					<div class="info-item signup">
+						<h4>News Letter</h4>
+						<p>Doner filet mignon bacon corned beef rump, frankfurter sirloin</p>
+						
+						<form action="" class="clearfix">
+							<input type="text" placeholder="enter your email">
+							<button><img src="/img/footer/icon-arrow.png" alt="Arrow"></button>
+						</form>
+					</div>
+
+					<div class="info-item hours">
+						<h4>Open Hours</h4>
+						<ul>
+							<li class="clearfix">
+								<span class="item-left">Mondays</span>
+								<span class="item-right">Closed</span>
+							</li>
+
+							<li class="clearfix">
+								<span class="item-left">Tue - Fri</span>
+								<span class="item-right">10am - 12am</span>
+							</li>
+
+							<li class="clearfix">
+								<span class="item-left">Sat - Sun</span>
+								<span class="item-right">7am - 1am</span>
+							</li>
+
+							<li class="clearfix">
+								<span class="item-left">Public Holidays</span>
+								<span class="item-right">12pm - 12am</span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="info-item contact">
+						<h4>Address</h4>
+						<ul>
+							<li class="clearfix">
+								<span class="icon"><img src="/img/footer/icon-footerPin.png" alt="Address Pin Icon"></span>
+								<p>1600 Blue Amphitheatre Parkway,</p>
+							</li>
+							<li class="clearfix">
+								<span class="icon"></span>
+								<p>Mountain View, CA 94043, USA</p>
+							</li>
+
+							<li class="clearfix">
+								<span class="icon"><img src="/img/footer/icon-footerPhone.png" alt="Phone Icon"></span>
+								<p>(212) 620 5682   -   (375) 620 5682</p>
+							</li>
+
+							<li class="clearfix">
+								<span class="icon"><img src="/img/footer/icon-footerEmail.png" alt="Email Icon"></span>
+								<p>support@nootheme.com</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="social-media">
+				<div class="wrapper">
+					<p>Copyright  2015 CHILLI Restaurant. Theme by <a href="/">Noottheme</a></p>
+					<div class="social-media-icons clearfix">
+						<a href="http://www.facebook.com">
+							<div class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+						</a>
+
+						<a href="http://www.twitter.com">
+							<div class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+						</a>
+
+						<a href="http://www.gmail.com">
+							<div class="icon"><i class="fa fa-google" aria-hidden="true"></i></div>
+						</a>
+
+						<a href="http://www.pinterest.com">
+							<div class="icon"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+						</a>
+						<!-- <div class="icon"><i class="fa fa-meh-o" aria-hidden="true"></i></div> -->
+					</div>
+				</div>
+			</section>
 		</footer>
 	</body>
 </html>

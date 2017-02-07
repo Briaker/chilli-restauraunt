@@ -1,3 +1,478 @@
-@import "normalize.styl"
+@import 'normalize.styl'
 
-// Enter your styles below here
+$light-font-colour = white
+$light-background-colour = white
+$dark-font-colour = black
+$button-background-colour = #ff514a
+
+$line-padding = 1rem
+$section-spacing = 4rem
+
+
+html
+  font-family 'Source Sans Pro', sans-serif
+
+body
+  background-color #242424
+  color $light-font-colour
+  margin 0
+  padding 0
+  line-height 1.5rem
+
+h1, h2, h3, h4
+  font-family 'Source Sans Pro', sans-serif
+  text-align center
+  padding-top 1rem
+  &.fancy
+    font-family 'Aguafina Script', cursive
+    font-weight normal
+
+h1 
+  font-size 72px
+
+h2
+  font-size 48px
+
+h3
+  font-size 36px
+
+h4
+  font-size 24px
+  text-transform uppercase
+
+a
+  text-decoration none
+  color $light-font-colour
+
+input[type=submit], button
+  border 0
+  margin 0
+  padding 0
+  background-color $button-background-colour
+  color $light-font-colour
+
+section
+  padding $section-spacing 0
+
+.hollow-button a
+  text-decoration none
+  position relative
+  button
+    position relative
+    left 50%
+    transform translateX(-50%)
+    margin 0 auto
+    border none
+    background none
+    border 3px solid black
+    padding 14px 30px
+    cursor pointer
+    color $dark-font-colour
+    p
+      text-transform uppercase
+      font-weight bold
+
+header topnav
+  display block
+  background #000
+  font-size 14px
+  color #BBB
+  
+  .nav-left
+    float left
+    p
+      padding $line-padding 0
+  
+  .nav-right
+    float right
+    
+    .top-menu
+      li
+        list-style none
+        display inline-block
+        padding $line-padding
+        border-left 1px solid white
+        img
+          margin-right 1rem
+        p
+          display inline-block
+    
+main
+  display block
+  nav
+    float left
+    width 100%
+    background rgba(0,0,0,0.5)
+    padding $line-padding 0
+    .wrapper
+      position relative
+    img
+      position absolute
+      left 0
+      top 50%
+      transform translateY(-50%)
+    ul
+      float right
+      padding 1rem 0
+      li
+        list-style none
+        display inline-block
+        padding 0 $line-padding
+
+.header-underline
+  width 322px
+  height 11px
+  margin 1.5rem auto
+  background url("../img/heading-underline-black.png")
+  &.light
+    background url("../img/heading-underline-white.png")
+
+
+//=================================================
+//=                 HOME PAGE                     =
+//=================================================
+
+.hero-banner
+  background url("../img/home-page/hero2.jpg")
+  background-repeat no-repeat
+  background-size 155%
+  background-position 65% 56%
+  text-align center
+  padding 10rem 0
+  h1
+    margin-bottom 0
+    padding-top $line-padding
+  h4
+    margin 2rem 0
+    &:before, &:after
+      content ''
+      position relative
+      display inline-block
+      bottom 5px
+      border-top 1px solid white
+      width 30px
+      height 1px
+      margin 0 1rem
+    img
+      margin 0 1rem
+
+.about
+  color $dark-font-colour
+  background $light-background-colour
+  text-align center
+  
+  .about-side
+    float left
+    height 465px
+    width 50%
+    p
+      padding 0 3rem
+
+.specials
+  padding-bottom 255px
+  background-image url("/img/home-page/cutlery.png")
+  background-position bottom 0px left calc(50% - 24px)
+  background-repeat no-repeat
+  background-color #F5F5F5
+  color $dark-font-colour
+
+.specials-wrapper
+  height 760px
+  margin 0 auto
+  padding 0 10rem
+  padding-top 10px
+  background url("../img/home-page/specials-border.png")
+  background-repeat no-repeat
+  background-position 0px 40px
+    
+.specials-wrapper-inner
+  margin 0 auto
+  line-height 5rem
+  font-size 20px
+  
+.special
+  width 33.3%
+  padding 0 2rem
+  float left
+  li
+    list-style none
+    :nth-child(even)
+      float right
+      font-style italic
+
+.specials-button
+  margin-top 7rem
+
+.reservation
+  background url("../img/chalk-background.jpg")
+  form
+    padding $section-spacing 0
+    .row-wrapper
+      margin 0
+      margin-top 30px
+    fieldset
+      float left
+      padding 0
+      margin 0
+      border none
+      color $dark-font-colour
+      background-color: $light-background-colour
+      width 370px
+      &:not(:last-child)
+        margin-right 28px
+    .label
+      display inline-block
+      width 55px
+      padding 0 10px
+    input[type=submit]
+        width 170px
+        height 38px
+    input[type=text]
+      height 38px
+      width 310px
+      border 0
+      margin 0
+    .short
+      width 270px
+      input[type=text]
+        width calc(270px - 59px)
+
+.services
+  background-color #f5f5f5
+  color $dark-font-colour
+  text-align center
+  p
+    padding 0 25%
+    margin-bottom 10rem
+  h4
+    padding 5rem 0 2rem 0
+    font-size 20px
+  .service
+    position relative
+    width 25%
+    background-color $light-background-colour
+    float left
+    &:not(last-child)
+      margin-right 28px
+      width calc(25% - 28px)
+    img
+      position absolute
+      top 0
+      left 50%
+      transform translate(-50%, -50%)
+
+
+//=================================================
+//=                 MENU PAGE                     =
+//=================================================
+
+.menu-header
+  background-color cadetblue
+  background url("../img/menu-page/header-bg.jpg")
+  padding 8rem 0 3rem 0
+  text-align center
+  ul li
+    padding 0 0.3rem
+    display inline-block
+
+.menu-section
+  color $dark-font-colour
+  background-color $light-background-colour
+  padding-top 3rem
+  padding-bottom 0
+  h4
+    text-align left
+  img
+    float left
+    width 25%
+    padding-top 3rem
+
+.menus-wrapper
+  width 33.3%
+  li
+    padding-top $line-padding
+    list-style none
+
+.ingredients, .menu-price
+  font-style italic
+
+.ingredients
+  color #818181
+  font-size 14px
+
+.ingredients-wrapper
+  padding-left 5px
+
+.ingredients-wrapper > *, .menus-wrapper
+  float left
+
+.dotted-line
+  margin 0 3px
+  height 1.1rem
+  border-bottom 2px dotted #818181
+  width 30%
+
+
+//=================================================
+//=               EVENTS PAGE                     =
+//=================================================
+
+.event-section
+  color $dark-font-colour
+  background-color $light-background-colour
+  text-align center
+  h3
+    padding 2rem 0
+  ul li
+    list-style none
+    display inline-block
+    padding 0 0.5rem
+    i
+      padding-right 0.5rem
+
+.event-description
+  margin $section-spacing 0
+
+.map-wrapper
+  padding $section-spacing 0
+  #map
+    width 830px
+    height 307px
+
+.buttons-wrapper
+  position relative
+  padding 2rem 0
+
+.event-button
+  position absolute
+  padding-top 2rem
+  button
+    width 180px
+
+.prev-button
+  top 0
+  left 0
+
+.next-button
+  top 0
+  right 0
+
+//=================================================
+//=                   FOOTER                      =
+//=================================================
+
+  
+footer
+  background url("../img/footer/footer-background.jpg") no-repeat
+
+.welcome
+  text-align center
+  padding $section-spacing 0
+  h3
+    text-transform uppercase
+    font-weight normal
+    padding 2rem 0
+  p
+    padding 0 20%
+
+.info
+  background-color rgba(50,50,50,0.5)
+  .info-item
+    width 33.3%
+    float left
+    &:not(:last-child)
+      border-right 1px solid rgba(68,68,68,0.3)
+      box-shadow 2px 0 0 rgba(47,47,47,0.3)
+
+    padding 0 24px
+    ul
+      list-style none
+  h4
+    text-align left
+    text-transform none
+    font-weight normal
+  li
+    margin-top 14px
+  p, span
+    color #A1A1A1
+
+.signup
+  height 100
+  p
+    margin-top 14px
+  form
+    height 28px
+    margin 32px 0
+    input, button
+      border 0
+      float left
+      height 45px
+      padding 0 14px
+    button
+      width 56px
+
+.hours
+  li span
+    float left
+    &:nth-child(even)
+      float right
+      color $light-font-colour
+
+.contact
+  .icon
+    width 17px
+    height 17px
+    padding 3px 0
+
+  li span
+    float left
+    margin 0 14px
+    padding 7px 0
+
+.social-media
+  background transparent
+  text-align center
+  a
+    color #A1A1A1
+    :hover
+      color white
+  padding 2rem 0
+  .social-media-icons
+    width 220px
+    margin 0 auto
+    padding-top 2rem
+    .icon
+      line-height 45px
+      width 45px
+      height 45px
+      background-color #303030
+      margin 5px
+      border-radius 50%
+      float left
+
+.sub-header
+  text-align center
+  font-size 14px
+
+// UTILITY CLASSES
+
+.vertical-wrapper
+  position relative
+  .vertical
+    position absolute
+    top 50%
+    transform translateY(-50%)
+
+.wrapper
+  width 1180px
+  margin 0 auto
+  &.shorter
+    max-width 830px
+
+.clearfix:after
+  visibility hidden
+  display block
+  font-size 0
+  content " "
+  clear both
+  height 0

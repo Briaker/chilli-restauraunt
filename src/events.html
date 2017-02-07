@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Aguafina+Script|Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+
+
+        <title>Chilli's Restauraunt - Events</title>
+    </head>
+
+    <body>
+        <header>    
+            <topnav class="clearfix">
+                <div class="wrapper">
+                    <div class="nav-left">
+                        <p>Welcome to Chilli Restauraunt</p>
+                    </div>
+                    <div class="nav-right">
+                        <ul class=top-menu>
+                            <li>
+                                <img src="/img/top-nav/icon-phone.png" alt="Phone Icon">
+                                <p>(00) 123 456789</p>
+                            </li>
+
+                            <li>
+                                <img src="/img/top-nav/icon-email.png" alt="Email Icon">
+                                <p>info@namecompany.com</p>
+                            </li>
+
+                            <li>
+                                <img src="/img/top-nav/icon-magnifying-glass.png" alt="Magnifying Glass Icon">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </topnav>
+        </header>
+
+        <main>
+            <nav class="clearfix">
+                <div class="wrapper clearfix">
+                    <img src="img/chilli-logo.png" alt="Chilli Logo">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/menu.html">Menu</a></li>
+                        <li><a href="/events.html"">Events</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <header class="menu-header">
+                <h2 class="fancy">Events List</h2>
+                <div class="header-underline light"></div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li>.</li>
+                    <li><a href="/events.html">Events</a></li>
+                    <li>.</li>
+                    <li><a href="/events.html">Detail</a></li>
+                </ul>
+            </header>
+
+            <section class="event-section clearfix">
+                <div class="wrapper shorter clearfix">
+                    <img src="img/events-page/event-01.jpg" alt="Hand holding a glass of red wine">
+
+                    <h3>Inceptos habitant blandit class tempus</h3>
+                    <ul>
+                        <li><i class="fa fa-clock-o" aria-hidden="true"></i>7:00am - 11:15am</li>
+                        <li><i class="fa fa-calendar-o" aria-hidden="true"></i>01 Nov 2015</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> California</li>
+                    </ul>
+
+                    <div class="header-underline"></div>
+
+                    <div class="event-description">
+                        <p>Inceptos habitant blandit class tempus lectus platea diam conubia ante netus consequat pretium aliquam blandit, convallis ultrices ullamcorper semper cubilia etiam sodales donec class sem risus imperdiet curabitur duis eu ultricies tortor malesuada curabitur consectetur odio, taciti praesent lobortis dapibus nibh mollis imperdiet, quis quam volutpat proin ultricies mollis placerat faucibus suspendisse posuere.</p><br>
+
+                        <p>Adipiscing etiam habitant tincidunt rutrum elementum eget nullam et eleifend vivamus integer hendrerit varius et non, rutrum ut aenean egestas dolor imperdiet gravida massa ultrices etiam nec felis vestibulum placerat tortor ornare suspendisse facilisis dolor ac scelerisque potenti, inceptos mattis nibh dolor gravida ante fames netus, gravida eu non blandit iaculis ad lobortis turpis euismod per hendrerit vel fusce nisl amet, at ultrices curabitur tempor primis nunc, class integer potenti etiam hendrerit cubilia.</p>
+                    </div>
+
+                    <div class="header-underline"></div>
+
+                    <div class="map-wrapper">
+                        <div id="map"></div>
+                        <script>
+                          function initMap() {
+                            var uluru = {lat: 8.920892, lng: 76.633512};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 14,
+                                center: uluru,
+                                mapTypeControl: false,
+                                scaleControl: false,
+                                streetViewControl: false,
+                                rotateControl: false,
+                                fullscreenControl: false
+                            });
+
+
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map,
+                                icon: '/img/marker.png'
+                            });
+                          }
+                        </script>
+
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN905OsiQTby5FNLJ3Ci07xT4mF9chmDQ&callback=initMap">
+                        </script>
+
+                        <div class="buttons-wrapper">
+                            <div class="hollow-button event-button prev-button">
+                                <a href="/events.html"><button><p>Prev Event</p></button></a>
+                            </div>                          
+                            <div class="hollow-button event-button next-button">
+                                <a href="/events.html"><button><p>Next Event</p></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="welcome">
+                <div class="wrapper">
+                    <img src="/img/chilli-logo-white-no-text.png" alt="Chilli Logo">
+                    <h3>Welcome To Chilli Restaurant</h3>
+                    <p>Primis orci neque luctus dui justo enim tristique curae, laoreet volutpat aenean purus gravida curae orci eleifend blandit, netus fames aliquam posuere cras quisque mi mollis scelerisque cras dictumst adipiscing class leo nisi curabitur at nam ut in.</p>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="wrapper clearfix">
+                    <div class="info-item signup">
+                        <h4>News Letter</h4>
+                        <p>Doner filet mignon bacon corned beef rump, frankfurter sirloin</p>
+                        
+                        <form action="" class="clearfix">
+                            <input type="text" placeholder="enter your email">
+                            <button><img src="/img/footer/icon-arrow.png" alt="Arrow"></button>
+                        </form>
+                    </div>
+
+                    <div class="info-item hours">
+                        <h4>Open Hours</h4>
+                        <ul>
+                            <li class="clearfix">
+                                <span class="item-left">Mondays</span>
+                                <span class="item-right">Closed</span>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="item-left">Tue - Fri</span>
+                                <span class="item-right">10am - 12am</span>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="item-left">Sat - Sun</span>
+                                <span class="item-right">7am - 1am</span>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="item-left">Public Holidays</span>
+                                <span class="item-right">12pm - 12am</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-item contact">
+                        <h4>Address</h4>
+                        <ul>
+                            <li class="clearfix">
+                                <span class="icon"><img src="/img/footer/icon-footerPin.png" alt="Address Pin Icon"></span>
+                                <p>1600 Blue Amphitheatre Parkway,</p>
+                            </li>
+                            <li class="clearfix">
+                                <span class="icon"></span>
+                                <p>Mountain View, CA 94043, USA</p>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="icon"><img src="/img/footer/icon-footerPhone.png" alt="Phone Icon"></span>
+                                <p>(212) 620 5682   -   (375) 620 5682</p>
+                            </li>
+
+                            <li class="clearfix">
+                                <span class="icon"><img src="/img/footer/icon-footerEmail.png" alt="Email Icon"></span>
+                                <p>support@nootheme.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="social-media">
+                <div class="wrapper">
+                    <p>Copyright  2015 CHILLI Restaurant. Theme by <a href="/">Noottheme</a></p>
+                    <div class="social-media-icons clearfix">
+                        <a href="http://www.facebook.com">
+                            <div class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        </a>
+
+                        <a href="http://www.twitter.com">
+                            <div class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        </a>
+
+                        <a href="http://www.gmail.com">
+                            <div class="icon"><i class="fa fa-google" aria-hidden="true"></i></div>
+                        </a>
+
+                        <a href="http://www.pinterest.com">
+                            <div class="icon"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                        </a>
+                        <!-- <div class="icon"><i class="fa fa-meh-o" aria-hidden="true"></i></div> -->
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
